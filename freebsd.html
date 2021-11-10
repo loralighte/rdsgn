@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The FreeBSD Project</title>
+        <link rel="icon" href="image/freebsd.favicon.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="freebsd.main.css">
+        <link rel="stylesheet" href="all.css">
+        <script src="freebsd.news.js" defer></script>
+    </head>
+    <body class="overflow-x-hidden">
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Fifth navbar example">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="image/freebsd.logo-white.png" class="nav-item w-24">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navdrop" aria-controls="navdrop" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navdrop">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                                <li><a class="dropdown-item" href="#">Introduction</a></li>
+                                <li><a class="dropdown-item" href="#">Features</a></li>
+                                <li><a class="dropdown-item" href="#">Advocacy</a></li>
+                                <li><a class="dropdown-item" href="#">Marketing</a></li>
+                                <li><a class="dropdown-item" href="#">Privacy Policy</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">Get FreeBSD</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown02">
+                                <li><a class="dropdown-item" href="#">Release Information</a></li>
+                                <li><a class="dropdown-item" href="#">Release Engineering</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Documentation</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                                <li><a class="dropdown-item" href="#">FAQ</a></li>
+                                <li><a class="dropdown-item" href="#">Handbook</a></li>
+                                <li><a class="dropdown-item" href="#">Porter's Handbook</a></li>
+                                <li><a class="dropdown-item" href="#">Developer's Handbook</a></li>
+                                <li><a class="dropdown-item" href="#">Committer's Guide</a></li>
+                                <li><a class="dropdown-item" href="#">Manual Pages</a></li>
+                                <li><a class="dropdown-item" href="#">Presentations & Papers</a></li>
+                                <li><a class="dropdown-item" href="#">Documentation Project Primer</a></li>
+                                <li><a class="dropdown-item" href="#">All Books and Articles</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">Community</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                                <li><a class="dropdown-item" href="#">Mailing Lists</a></li>
+                                <li><a class="dropdown-item" href="#">Forums</a></li>
+                                <li><a class="dropdown-item" href="#">User Groups</a></li>
+                                <li><a class="dropdown-item" href="#">Events</a></li>
+                                <li><a class="dropdown-item" href="#">FreeBSD Journal</a></li>
+                                <li><a class="dropdown-item" href="#">Q&A (external)</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="dropdown05" data-bs-toggle="dropdown" aria-expanded="false">Developers</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown05">
+                                <li><a class="dropdown-item" href="#">Project Ideas</a></li>
+                                <li><a class="dropdown-item" href="#">Git Repository</a></li>
+                                <li><a class="dropdown-item" href="#">Subversion Repository</a></li>
+                                <li><a class="dropdown-item" href="#">Github Mirror</a></li>
+                                <li><a class="dropdown-item" href="#">Code Review (Phabricator)</a></li>
+                                <li><a class="dropdown-item" href="#">Wiki</a></li>
+                                <li><a class="dropdown-item" href="#">Continuous Integration Service</a></li>
+                            </ul>
+                        </li> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">Support</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown06">
+                                <li><a class="dropdown-item" href="#">Vendors</a></li>
+                                <li><a class="dropdown-item" href="#">Security Information</a></li>
+                                <li><a class="dropdown-item" href="#">Bug Reports</a></li>
+                                <li><a class="dropdown-item" href="#">Submitting Bug Reports</a></li>
+                            </ul>
+                        </li> 
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="dropdown07" data-bs-toggle="dropdown" aria-expanded="false">Foundation</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown07">
+                                <li><a class="dropdown-item" href="#">Monetary Donations</a></li>
+                                <li><a class="dropdown-item" href="#">Hardware Donations</a></li>
+                            </ul>
+                        </li> 
+                        <!-- 
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="dropdown0X" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdown0X">
+                                <li><a class="dropdown-item" href="#"></a></li>
+                            </ul>
+                        </li> 
+                        -->
+                    </ul>
+                    <form class="flex gap-2">
+                        <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+                        <input type="submit" value="Search" class="px-3 rounded">
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Banner -->
+        <div class="px-4 h-5_6 text-center bg-image-freebsd flex justify-center items-center">
+            <div class="-mt-15">
+                <img class="d-block mx-auto mb-4" src="image/freebsd.logo.png" alt="" width="500">
+                <div class="col-lg-6 mx-auto">
+                    <p class="lead mb-4 text-white">FreeBSD is an operating system that powers modern servers, desktops, embedded platforms, among others. FreeBSD has been maintained for over thirty years.</p>
+                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+                        <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Download FreeBSD</button>
+                        <button type="button" class="btn btn-outline-light btn-lg px-4">New to FreeBSD?</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-dark flex justify-center items-center w-screen">
+            <footer class="text-white text-center py-2">
+                <p>&copy; 2021, Kai Lyons</p>
+                <p>This website is not associated with either the FreeBSD&reg; Project or FreeBSD&reg; Foundation</p>
+                <p>FreeBSD&reg; is a registered trademark of the FreeBSD&reg; Foundation</p>
+                <p>FreeBSD&reg; Logos are owned by the FreeBSD&reg; Foundation</p>
+            </footer>
+        </div>
+    </body>
+</html>
